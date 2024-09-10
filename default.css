@@ -23,8 +23,10 @@ h1 {
 }
 
 #top-nav a:hover {
-    color: black;
+    border-bottom: 3px solid red;
+    color: red;
 }
+
 
 /*body*/
 .center {
@@ -58,6 +60,17 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     color: #be3144;
+}
+
+.btn {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background-color: #be3144;
+    color: white;
 }
 
 /*about me*/
@@ -111,21 +124,12 @@ h2 {
 
 /*gallery*/
 .on-gallery {
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
-.row1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
 }
 
-.row2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.row3 {
+.row1, .row2, .row3 {
+    gap: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
